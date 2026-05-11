@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg: #0f0f0f;
+            --surface: #1a1a1a;
+            --border: #2a2a2a;
+            --accent: #e8e0c8;
+            --muted: #555;
+            --text: #ccc;
+            --hover: #222;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 300;
+            min-height: 100vh;
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--accent);
+            letter-spacing: 0.05em;
+        }
+
+        header p {
+            font-size: 0.8rem;
+            color: var(--muted);
+            margin-top: 0.4rem;
+            font-family: 'IBM Plex Mono', monospace;
+        }
+
+        .file-list {
+            list-style: none;
+        }
+
+        .file-list li {
+            border-bottom: 1px solid var(--border);
+        }
+
+        .file-list a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.9rem 0;
+            text-decoration: none;
+            color: var(--text);
+            transition: color 0.15s;
+            gap: 1rem;
+        }
+
+        .file-list a:hover {
+            color: var(--accent);
+        }
+
+        .file-name {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .file-ext {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--muted);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 0.15rem 0.5rem;
+            flex-shrink: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        footer {
+            margin-top: 3rem;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--muted);
+        }
+
+        .search-wrap {
+            margin-bottom: 1.5rem;
+        }
+
+        #search {
+            width: 100%;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text);
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.85rem;
+            padding: 0.6rem 0.8rem;
+            outline: none;
+            transition: border-color 0.15s;
+        }
+
+        #search::placeholder {
+            color: var(--muted);
+        }
+
+        #search:focus {
+            border-color: var(--accent);
+        }
+
+        .no-results {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--muted);
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>{{ .Site.Title }}</h1>
+        <p>{{ len .Site.Data.files }} files</p>
+    </header>
+
+    <div class="search-wrap">
+        <input id="search" type="text" placeholder="search files..." autocomplete="off" spellcheck="false">
+    </div>
+
+    <ul class="file-list">
+        {{ range .Site.Data.files }}
+        <li>
+            <a href="viewer.html?file={{ .path }}" target="_blank">
+                <span class="file-name">{{ .name }}</span>
+                <span class="file-ext">{{ .ext }}</span>
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+
+    <footer>{{ now.Format "2006-01-02" }}</footer>
+</div>
+<script>
+    const input = document.getElementById("search");
+    const items = document.querySelectorAll(".file-list li");
+    const list = document.querySelector(".file-list");
+
+    input.addEventListener("input", () => {
+        const q = input.value.toLowerCase().trim();
+        let visible = 0;
+
+        items.forEach(li => {
+            const name = li.querySelector(".file-name").textContent.toLowerCase();
+            const match = name.includes(q);
+            li.style.display = match ? "" : "none";
+            if (match) visible++;
+        });
+
+        const existing = list.querySelector(".no-results");
+        if (visible === 0 && q !== "") {
+            if (!existing) {
+                const msg = document.createElement("li");
+                msg.className = "no-results";
+                msg.textContent = "no files match";
+                list.appendChild(msg);
+            }
+        } else if (existing) {
+            existing.remove();
+        }
+    });
+</script>
+</body>
+</html>

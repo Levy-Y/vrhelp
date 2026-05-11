@@ -1,0 +1,203 @@
+- ext: pdf
+  name: 00_Debian11.05server-Letoltes&Telepites_2022-23_v1.1.pdf
+  path: files/00_Debian11.05server-Letoltes&Telepites_2022-23_v1.1.pdf
+- ext: pdf
+  name: 00_Debian11.05server-Letoltes&Telepites_2022-23_v1.2.pdf
+  path: files/00_Debian11.05server-Letoltes&Telepites_2022-23_v1.2.pdf
+- ext: pdf
+  name: "01a_Debian11.05server-Halozatibeall-Bels\u0151csat+NAT(netes telep\xEDt\xE9\
+    s)_2022-23_v1.1.pdf"
+  path: "files/01a_Debian11.05server-Halozatibeall-Bels\u0151csat+NAT(netes telep\xED\
+    t\xE9s)_2022-23_v1.1.pdf"
+- ext: pdf
+  name: "01a_Debian11.05server-Halozatibeall-Bels\u0151csat+NAT(netes telep\xEDt\xE9\
+    s)_2022-23_v1.2.pdf"
+  path: "files/01a_Debian11.05server-Halozatibeall-Bels\u0151csat+NAT(netes telep\xED\
+    t\xE9s)_2022-23_v1.2.pdf"
+- ext: pdf
+  name: "01b_Debian11.05server-Halozatibeall-Bels\u0151csat+ISO(CD-s telep\xEDt\xE9\
+    s)_2022-23_v1.pdf"
+  path: "files/01b_Debian11.05server-Halozatibeall-Bels\u0151csat+ISO(CD-s telep\xED\
+    t\xE9s)_2022-23_v1.pdf"
+- ext: pdf
+  name: 02_Debian11.05server-DHCP_2022-23_v1.3.pdf
+  path: files/02_Debian11.05server-DHCP_2022-23_v1.3.pdf
+- ext: pdf
+  name: 03_Debian11.05server-RAID_2022-23_v1.pdf
+  path: files/03_Debian11.05server-RAID_2022-23_v1.pdf
+- ext: pdf
+  name: 04_Debian11.05server-SAMBA_2022-23_v1.2.pdf
+  path: files/04_Debian11.05server-SAMBA_2022-23_v1.2.pdf
+- ext: pdf
+  name: 05_Debian11.05server-FTP_2022-23_v1.2.pdf
+  path: files/05_Debian11.05server-FTP_2022-23_v1.2.pdf
+- ext: pdf
+  name: 06_Debian11.05server-NFS_2022-23_v1.1.pdf
+  path: files/06_Debian11.05server-NFS_2022-23_v1.1.pdf
+- ext: pdf
+  name: 07_Debian11.05server-DNS_22-23_v1.pdf
+  path: files/07_Debian11.05server-DNS_22-23_v1.pdf
+- ext: pdf
+  name: 07_Debian12szerver-DNS_24-25_v1.2.pdf
+  path: files/07_Debian12szerver-DNS_24-25_v1.2.pdf
+- ext: pdf
+  name: 08_Debian11.05server-SSH_2022-23_v1.1.pdf
+  path: files/08_Debian11.05server-SSH_2022-23_v1.1.pdf
+- ext: pdf
+  name: 08_Debian12szerver-SSH_2024-25_v1.0.pdf
+  path: files/08_Debian12szerver-SSH_2024-25_v1.0.pdf
+- ext: pdf
+  name: 09_Debian11.05server-UFW_2022-23_v1.pdf
+  path: files/09_Debian11.05server-UFW_2022-23_v1.pdf
+- ext: pdf
+  name: 09_Debian12szerver-UFW_2024-25_v1.0.pdf
+  path: files/09_Debian12szerver-UFW_2024-25_v1.0.pdf
+- ext: pdf
+  name: 10_Debian11.05server-HTTP(Apache)_2022-23_v1.1.pdf
+  path: files/10_Debian11.05server-HTTP(Apache)_2022-23_v1.1.pdf
+- ext: pdf
+  name: 10_Debian12szerver-HTTP(Apache)_2024-25_v1.0.pdf
+  path: files/10_Debian12szerver-HTTP(Apache)_2024-25_v1.0.pdf
+- ext: pdf
+  name: 11_Debian11.05server-Mail(Postfix)_2022-23_v2.6.pdf
+  path: files/11_Debian11.05server-Mail(Postfix)_2022-23_v2.6.pdf
+- ext: pdf
+  name: 12_Debian12szerver-Syslog_2024-25v1.0.pdf
+  path: files/12_Debian12szerver-Syslog_2024-25v1.0.pdf
+- ext: pdf
+  name: 13_Debian12szerver-LAMP_2024-25_v1.0.pdf
+  path: files/13_Debian12szerver-LAMP_2024-25_v1.0.pdf
+- ext: docx
+  name: Change_enp0s_to_eth0_on_debian.docx
+  path: files/Change_enp0s_to_eth0_on_debian.docx
+- ext: pdf
+  name: "Csoporth\xE1zirend szolg\xE1ltat\xE1sok konfigur\xE1l\xE1sa.pdf"
+  path: "files/Csoporth\xE1zirend szolg\xE1ltat\xE1sok konfigur\xE1l\xE1sa.pdf"
+- ext: pdf
+  name: "C\xEDmt\xE1r-(Active Directory)-telep\xEDt\xE9s,-alapkonfigur\xE1l\xE1s.pdf"
+  path: "files/C\xEDmt\xE1r-(Active Directory)-telep\xEDt\xE9s,-alapkonfigur\xE1l\xE1\
+    s.pdf"
+- ext: docx
+  name: Linux APT csomagkezeles.docx
+  path: files/Linux APT csomagkezeles.docx
+- ext: docx
+  name: Linux Alhalozatok 2.docx
+  path: files/Linux Alhalozatok 2.docx
+- ext: docx
+  name: Linux Alhalozatok.docx
+  path: files/Linux Alhalozatok.docx
+- ext: docx
+  name: Linux CA.docx
+  path: files/Linux CA.docx
+- ext: docx
+  name: Linux Docker.docx
+  path: files/Linux Docker.docx
+- ext: docx
+  name: Linux Naplozas.docx
+  path: files/Linux Naplozas.docx
+- ext: docx
+  name: Linux SAMBA.docx
+  path: files/Linux SAMBA.docx
+- ext: docx
+  name: Linux Systemd.docx
+  path: files/Linux Systemd.docx
+- ext: docx
+  name: Linux VPN - Site-to-Site.docx
+  path: files/Linux VPN - Site-to-Site.docx
+- ext: docx
+  name: Linux Zonazo Tuzfal.docx
+  path: files/Linux Zonazo Tuzfal.docx
+- ext: docx
+  name: "Linux lemezkezel\xE9s 1.docx"
+  path: "files/Linux lemezkezel\xE9s 1.docx"
+- ext: docx
+  name: "Linux lemezkezel\xE9s 2.docx"
+  path: "files/Linux lemezkezel\xE9s 2.docx"
+- ext: docx
+  name: "Linux lemezkezel\xE9s 3.docx"
+  path: "files/Linux lemezkezel\xE9s 3.docx"
+- ext: docx
+  name: "Linux lemezkezel\xE9s 4.docx"
+  path: "files/Linux lemezkezel\xE9s 4.docx"
+- ext: docx
+  name: "Linux lemezkezel\xE9s 5.docx"
+  path: "files/Linux lemezkezel\xE9s 5.docx"
+- ext: docx
+  name: "Linux lemezkezel\xE9s 6.docx"
+  path: "files/Linux lemezkezel\xE9s 6.docx"
+- ext: docx
+  name: "Linux lemezkezel\xE9s 7.docx"
+  path: "files/Linux lemezkezel\xE9s 7.docx"
+- ext: docx
+  name: "Linux lemezkezel\xE9s 8.docx"
+  path: "files/Linux lemezkezel\xE9s 8.docx"
+- ext: pdf
+  name: LinuxHelp_Esettanulmanyhoz_230424.pdf
+  path: files/LinuxHelp_Esettanulmanyhoz_230424.pdf
+- ext: pdf
+  name: "Linux_szerver_seg\xE9dlet_24-25_v1.3.pdf"
+  path: "files/Linux_szerver_seg\xE9dlet_24-25_v1.3.pdf"
+- ext: pdf
+  name: "Update, RDP, Automatikus szoftvertelep\xEDt\xE9s, H\xE1l\xF3zati k\xE1rtya\
+    \ \xF6sszevon\xE1s-v1.0.pdf"
+  path: "files/Update, RDP, Automatikus szoftvertelep\xEDt\xE9s, H\xE1l\xF3zati k\xE1\
+    rtya \xF6sszevon\xE1s-v1.0.pdf"
+- ext: pdf
+  name: "Windows Szerver - DHCP Telep\xEDt\xE9se, Konfigur\xE1l\xE1sa biztons\xE1\
+    gi.pdf"
+  path: "files/Windows Szerver - DHCP Telep\xEDt\xE9se, Konfigur\xE1l\xE1sa biztons\xE1\
+    gi.pdf"
+- ext: pdf
+  name: WindowsServer2022 - FTP.pdf
+  path: files/WindowsServer2022 - FTP.pdf
+- ext: pdf
+  name: WindowsServer2022- WDS_v1.1.pdf
+  path: files/WindowsServer2022- WDS_v1.1.pdf
+- ext: pdf
+  name: WindowsServer2022-lemezkezeles.pdf
+  path: files/WindowsServer2022-lemezkezeles.pdf
+- ext: pdf
+  name: WindowsSzerver2022- Roaming profil.pdf
+  path: files/WindowsSzerver2022- Roaming profil.pdf
+- ext: pdf
+  name: "WindowsSzerver2022-Active Directory - megosztott mapp\xE1k.pdf"
+  path: "files/WindowsSzerver2022-Active Directory - megosztott mapp\xE1k.pdf"
+- ext: pdf
+  name: "WindowsSzerver2022-DNS(AD n\xE9lk\xFCl)_23-24_v1.1.pdf"
+  path: "files/WindowsSzerver2022-DNS(AD n\xE9lk\xFCl)_23-24_v1.1.pdf"
+- ext: pdf
+  name: WindowsSzerver2022-DNS_23-24_v1.1.pdf
+  path: files/WindowsSzerver2022-DNS_23-24_v1.1.pdf
+- ext: pdf
+  name: WindowsSzerver2022-FSRM_v1.3.pdf
+  path: files/WindowsSzerver2022-FSRM_v1.3.pdf
+- ext: pdf
+  name: "WindowsSzerver2022-Kiszolg\xE1l\xF3kezel\u0151.pdf"
+  path: "files/WindowsSzerver2022-Kiszolg\xE1l\xF3kezel\u0151.pdf"
+- ext: pdf
+  name: WindowsSzerver2022-NAT_v1.1.pdf
+  path: files/WindowsSzerver2022-NAT_v1.1.pdf
+- ext: pdf
+  name: "WindowsSzerver2022-Objektumok_kezel\xE9se.pdf"
+  path: "files/WindowsSzerver2022-Objektumok_kezel\xE9se.pdf"
+- ext: pdf
+  name: WindowsSzerver2022-VPN_v1.3.pdf
+  path: files/WindowsSzerver2022-VPN_v1.3.pdf
+- ext: pdf
+  name: WindowsSzerver2022-Web(IIS).pdf
+  path: files/WindowsSzerver2022-Web(IIS).pdf
+- ext: ps1
+  name: home_mappak.ps1
+  path: files/home_mappak.ps1
+- ext: pdf
+  name: netTeaming_linux_alatt.pdf
+  path: files/netTeaming_linux_alatt.pdf
+- ext: ps1
+  name: profilok_mappa.ps1
+  path: files/profilok_mappa.ps1
+- ext: csv
+  name: users.csv
+  path: files/users.csv
+- ext: docx
+  name: "~$nux lemezkezel\xE9s 1.docx"
+  path: "files/~$nux lemezkezel\xE9s 1.docx"

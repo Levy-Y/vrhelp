@@ -1,0 +1,3 @@
+baseURL = 'https://levy-y.github.io/vrhelp'
+locale = 'en-us'
+title = 'VrHelp'
