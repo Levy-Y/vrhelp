@@ -1,0 +1,8 @@
+Konfigurálja az Internet Explorer 11 GPO használatával egy tartományban
+	https://hu.telusuri.info/articles/active-directory/nastrojka-internet-explorer-11-s-pomoshyu-gpo-v-domene.html
+
+Óra letiltása 
+	https://www.makeuseof.com/how-to-hide-show-clock-and-date-taskbar-windows-10-11/
+	
+manuálisan:	
+	https://www.youtube.com/watch?v=8iaLTat3qt8
