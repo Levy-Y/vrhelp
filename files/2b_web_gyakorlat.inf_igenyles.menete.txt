@@ -1,0 +1,7 @@
+Igénylés menete: (rendszergazda joggal: parancssorban vagy Ps terminálban)
+
+	certreq -new 2b_web_gyakorlat.inf web.req
+
+	certreq -submit web.req web.cer
+
+	certreq -accept web.cer

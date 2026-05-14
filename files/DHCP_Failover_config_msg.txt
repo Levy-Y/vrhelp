@@ -1,0 +1,25 @@
+In the Configure Failover dialog box, configure the following options: 
+ 
+Relationship Name: 
+	Enter a descriptive name to describe this DHCP Failover relationship or accept the default value.
+Maximum Client Lead Time: 
+	Specifies the amount of time for which a DHCP lease may be renewed by either failover peer without contacting the other.  
+	It also specifies the amount of time that either DHCP server will wait in a “partner down” state
+        before assuming control of the entire IP address range within the scope.  ( default = 1 hour ).
+Mode: 
+	Select Load Balance ( default – Active / Active ) or Hot Standby ( Active / Passive )
+Load Balance Percentage: 
+	Specifies the percentage of the IP Address range to reserve for each server in the failover relationship.  
+	Each server will use their assigned range of addresses prior to assuming control
+        over the entire IP Address range of a scope when the other server transitions into a “partner down” state
+        and the Maximum Client Lead Time ( specified above ) passes.
+Auto State Switchover Interval: 
+	When selected, specifies the amount of time that elapses before a DHCP Server is automatically transitioned
+        to a “partner down” state when network communication is interrupted to a DHCP Server.
+        If this option is unchecked, an administrator must manually transition the status of a DHCP Server
+        into a “partner down” state using the DHCP Management console or PowerShell.
+	( when checked, the default = 60 minutes )
+Enable Message Authentication: 
+	check this checkbox option to enable authentication of failover replication traffic between servers
+Shared Secret:  
+	Type a “Shared Secret” ( ie., a Password ) to be used to authenticate the failover connection between servers

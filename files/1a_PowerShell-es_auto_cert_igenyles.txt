@@ -1,0 +1,26 @@
+PowerShell-es automatikus cert igénylés:
+
+1. PowerShell (rendszergazdaként a WEBSZERVEREN):
+
+	$Template = "Webkiszolgalo_SAN"
+	$DnsName  = "www.gyakorlat.local","gyakorlat.local"
+
+	Get-Certificate `
+	  -Template $Template `
+	  -DnsName $DnsName `
+	  -CertStoreLocation Cert:\LocalMachine\My
+________________________________________
+	
+Mit csinál ez?
+•	kulcspárt generál
+•	SAN-t beállítja
+•	beküldi a CA-nak
+•	kész certet berakja:
+		Local Computer → Personal → IIS azonnal látja!
+________________________________________
+
+Ellenőrzés:
+
+	Get-ChildItem Cert:\LocalMachine\My | 
+	Where-Object {$_.Subject -like "*gyakorlat*"} |
+	Select Subject, DnsNameList, NotAfter

@@ -1,0 +1,27 @@
+Firefox kiegészítés:
+
+1.Root CA (és Intermediate) importálása Firefoxba – leggyakoribb
+
+Ha belső AD CA:
+Lépések:
+	Firefox → Settings:
+		Privacy & Security:
+			Certificates:
+				View Certificates:
+					Authorities fül: Import
+	Importáld:
+		Root CA cert + Intermediate CA cert (ha van)
+	
+	Pipáld be:
+		✅ Trust this CA to identify websites
+
+	Firefox restart!
+
+2.Firefox használja a Windows trust store-t (enterprise környezet)
+		Ez a “szép” megoldás AD-ben.
+
+	Beállítás:
+		about:config
+		security.enterprise_roots.enabled = true
+
+	Utána Firefox automatikusan bízik az AD CA-ban.

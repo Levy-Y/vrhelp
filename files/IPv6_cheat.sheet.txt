@@ -1,0 +1,15 @@
+IPv6:
+	https://github.com/onemarcfifty/cheat-sheets/blob/main/networking/ipv6.md
+
+video 1.rész: IPv6 alapok
+	https://www.youtube.com/watch?v=oItwDXraK1M
+
+video 2.rész: IPv6 dhcp
+	https://www.youtube.com/watch?v=jlG_nrCOmJc
+	
+
+Leírások:
+	http://6net.niif.hu/tipster6/papers/overview/3.fejezet.html
+	
+	mentve docx-be is:
+		https://szit.hu/doku.php?id=oktatas:halozat:cisco_szerint_a_halozat:fejezet_10_-_dhcp

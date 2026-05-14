@@ -1,0 +1,40 @@
+	
+To configure DHCPv6 on Windows Server, first ensure the DHCP Server role is installed and the server is authorized in Active Directory. Then, in the DHCP management console, create a new IPv6 scope by right-clicking the IPv6 node and selecting "New Scope". Finally, configure the scope with an address prefix, specify the lease duration, and set necessary options like DNS servers. 
+Prerequisites
+Install DHCP Server role: 
+	Ensure the DHCP Server role is installed on your Windows Server.
+Authorize the server: 
+	If your server is part of a domain, authorize it in Active Directory to prevent unauthorized servers from running on the network. 
+Step 1: 
+	Create a new DHCPv6 scope 
+		Open the DHCP management console: Navigate to Server Manager > Tools > DHCP.
+		Expand your server name and select the IPv6 node.
+		Right-click the IPv6 node and select New Scope to launch the New Scope wizard.
+	Follow the wizard:
+		Name: 
+			Provide a name and description for the scope.
+		Prefix: 
+			Enter the IPv6 address prefix for the scope. For example, FD00:1234:5678::/64.
+		Lease Duration: 
+			Set the time for the lease (e.g., 8 days).
+		DHCPv6 Options: 
+			Select whether to configure the scope as stateful or stateless. 
+
+Step 2: 
+	Configure DHCPv6 scope options 
+		After creating the scope, right-click the scope and select Properties.
+		Go to the General tab and check Enable DNS dynamic updates and select the desired update settings.
+		Navigate to the DNS tab and enter the IPv6 address of the DNS server you want to use.
+		Click Add to add the DNS server and then OK to save the changes. 
+Step 3: 
+	Set server options 
+		In the DHCP console, right-click the server name and 
+		select Set Predefined Options to define custom options for your scope.
+		Set the Option code to 23 for DNS servers and enter the IPv6 address of the DNS server. 
+Step 4: 
+	Verify your configuration 
+		In the DHCP console, expand the IPv6 node, select the scope you created, and click on Address Leases.
+		You should see the IPv6 addresses that have been leased to your clients. 
+	
+This video demonstrates how to configure a new scope for DHCPv6 on Windows Server:
+	https://www.google.com/search?q=how+to+configuration+dhcp+v6+on+windows+server&client=opera&hs=Uba&sca_esv=b51b2d73c9f7d5a8&ei=tI0UabeqCfmO-d8PpbLwwAI&ved=0ahUKEwi31Oj53eyQAxV5R_4FHSUZHCgQ4dUDCBE&uact=5&oq=how+to+configuration+dhcp+v6+on+windows+server&gs_lp=Egxnd3Mtd2l6LXNlcnAiLmhvdyB0byBjb25maWd1cmF0aW9uIGRoY3AgdjYgb24gd2luZG93cyBzZXJ2ZXIyBxAhGKABGAoyBxAhGKABGAoyBxAhGKABGAoyBxAhGKABGApIqkJQqQhYhDFwAXgBkAEAmAGdAaAB8xCqAQQwLjE4uAEDyAEA-AEBmAIToAKtEsICChAAGLADGNYEGEfCAgQQIRgVmAMAiAYBkAYHkgcEMS4xOKAHsoUBsgcEMC4xOLgHpRLCBwQyLTE5yAdu&sclient=gws-wiz-serp#fpstate=ive&vld=cid:51fbb0f0,vid:oHEeErYPN5A,st:2
