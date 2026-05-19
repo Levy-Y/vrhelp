@@ -1,0 +1,88 @@
+Feladat:
+
+A root felhasználóval bejelentkezve készítse el az alábbi feladatokat!
+Fájlrendszer létrehozása, csatolása
+Adjon hozzá egy új 15GB-os merevlemezt a SCSI-vezérlőn át a Debian szerveréhez!
+A lemez egyetlen partíciója EXT4 típusú fájlrendszerrel rendelkezzen!
+Automatikus csatolást állítson be a SATA-s 15GB-os merevlemezre, 
+a partíció tartalma a /home/ftp könyvtáron keresztül legyen elérhető.
+Futtassa az lsblk -f  > /root/lemezinfo.txt parancsot.
+
+
+Megoldás:
+1. Lépés: Új merevlemez hozzáadása a VirtualBoxban
+Ha fut a Debian virtuális gép, állítsd le (poweroff vagy állítsd le szabályosan).
+
+A VirtualBox főablakában kattints a Debian13Szerver gépre, majd menj a Beállítások (Settings) -> Tároló (Storage) menüponthoz.
+
+Kattints a SATA vezérlő (Controller: SATA) melletti kis merevlemez ikonra ("Merevlemez hozzáadása" / Add Hard Disk).
+
+Válaszd a Létrehozás (Create) gombot.
+
+Maradhat a VDI formátum -> Tovább.
+
+Maradhat a Dinamikusan növekvő (Dynamically allocated) -> Tovább.
+
+A méreténél írd be pontosan: 15,00 GB.
+
+Kattints a Létrehozás, majd a választó ablakban a Kiválasztás (Choose) gombra.
+
+Nyomj OK-t a gép beállításainál, és indítsd el a Debiant, majd lépj be root-ként.
+
+2. Lépés: Particionálás és EXT4 fájlrendszer létrehozása
+A terminálban meg kell keresnünk az új lemezt. Rendszerint ez az /dev/sdb lesz.
+
+Ellenőrizzük le a lemez nevét:
+
+Bash
+lsblk
+(Látni fogsz egy 15G méretű lemezt, valószínűleg sdb névvel. A következőkben sdb-ként írom a parancsokat).
+
+Hozzuk létre az egyetlen partíciót az fdisk eszközzel:
+
+Bash
+fdisk /dev/sdb
+Nyomj egy n betűt (New partition), majd Enter.
+
+Nyomj Enter-t a Partition type (primary) kérdésre.
+
+Nyomj Enter-t a Partition number kérdésre.
+
+Nyomj Enter-t a First sector kérdésre.
+
+Nyomj Enter-t a Last sector kérdésre (így a teljes 15GB-ot lefedi).
+
+Nyomj egy w betűt (Write) és Enter-t a változtatások mentéséhez.
+
+Formázzuk meg a friss partíciót EXT4 fájlrendszerre:
+
+Bash
+mkfs.ext4 /dev/sdb1
+3. Lépés: Csatolási pont létrehozása és automatikus csatolás (fstab)
+Hozzuk létre a feladat által kért könyvtárat:
+
+Bash
+mkdir -p /home/ftp
+Ahhoz, hogy a gép újraindítása után is automatikusan felcsatolódjon a lemez, be kell írnunk az /etc/fstab fájlba. Nyisd meg a nanóval:
+
+Bash
+nano /etc/fstab
+Menj a fájl legalsó sorára, és gépeld be a következőt (figyelj a tabulátorokra vagy szóközökre a mezők között):
+
+Plaintext
+/dev/sdb1    /home/ftp    ext4    defaults    0    2
+Mentsd el és lépj ki (CTRL+O, Enter, CTRL+X).
+
+Teszteljük le, hogy működik-e a csatolás anélkül, hogy újraindítanánk a gépet:
+
+Bash
+mount -a
+(Ha nem dob hibát a parancs, akkor az fstab fájlt tökéletesen írtad meg).
+
+4. Lépés: A lemezinfó fájl kimenetének legenerálása
+A feladatlap utolsó pontja szerint le kell futtatni egy ellenőrző parancsot, aminek a kimenetét egy szöveges fájlba kell irányítani a root könyvtárába:
+
+Bash
+lsblk -f > /root/lemezi nfo.txt
+
+Hasznos lehet: https://iranyonline.hu/merevlemezek-es-particiok-kezelese-a-parancssorbol-debianon/

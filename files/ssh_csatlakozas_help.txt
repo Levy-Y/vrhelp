@@ -1,0 +1,127 @@
+ssh csatlakozás:
+ssh komplex@ssh.local.net -p 2200 
+
+ssl certificate:
+ - (A 'hostname -f' eredménye lesz a Common Name (CN). Erre vonatkozik a tanúsítvány.)
+ - a létrejött tanúsítvány tartalma megjeleníthető a openssl x509 -in /etc/ssl/cert/ssl-cert-snakeoil.pem -noout -text paranccsal.
+ - ezt a tanúsítványt létrehozhatjuk/felülírhatjuk a make-ssl-cert generate-default-snakeoil --force-overwrite paranccsal.
+ - az openssl req -x509 -newkey rsa:2048 -nodes -keyout www.key -out www-cert.pem -days 365 -subj '/CN=www.local.net' paranccsal a www.local.net névhez hozhatunk létre kulcsot és önaláírt tanúsítványt.
+
+
+lemezcsatolás:
+A /home/ftp könyvtárhoz készíts egy külön 10 GB-os tárolóhelyet (újraindításkor automatikusan csatolódjon). - Új 10 GB-os lemez hozzáadása a virtuális géphez. - A lemez particionálása, - A létrejött partíció formázása ext4 fájlrendszerre FTP címkével. - /home/ftp létrehozása és a fájlrendszer csatolása, gép újraindítása - lsblk futtatása, /etc/fstab szerkesztése, új bejegyzés hozzáadása, teszt - reboot Jelentkezzen be normál felhasználóként és addj ki a "lsblk -f; cat /etc/fstab;" parancsot. Készítsen képernyőképet, és töltse fel "part-ftp.png" néven!
+
+
+
+
+1. Új 10 GB-os lemez hozzáadása
+
+VirtualBox / VMware:
+
+VM kikapcsolás
+Settings
+Storage
+Add Hard Disk
+10 GB
+új SATA disk
+
+Utána indítsd el a gépet.
+
+2. Ellenőrizd az új lemezt
+lsblk
+
+Valami új lemez megjelenik pl:
+
+sdb      10G
+3. Particionálás
+sudo fdisk /dev/sdb
+
+Benne:
+
+n
+p
+1
+ENTER
+ENTER
+w
+4. Formázás ext4-re FTP címkével
+sudo mkfs.ext4 -L FTP /dev/sdb1
+5. Könyvtár létrehozása
+sudo mkdir -p /home/ftp
+6. Ideiglenes csatolás
+sudo mount /dev/sdb1 /home/ftp
+7. Ellenőrzés
+lsblk -f
+
+Látnod kell:
+
+sdb1 ext4 FTP
+8. UUID lekérése
+sudo blkid
+
+Példa:
+
+UUID="1234-5678-ABCD"
+9. /etc/fstab szerkesztése
+sudo nano /etc/fstab
+
+A végére:
+
+UUID=1234-5678-ABCD /home/ftp ext4 defaults 0 2
+
+A saját UUID-odat írd be.
+
+10. Teszt reboot nélkül
+sudo umount /home/ftp
+
+majd:
+
+sudo mount -a
+
+Ha nincs hiba:
+jó az fstab.
+
+11. Reboot
+sudo reboot
+12. Normál felhasználóval
+
+Bejelentkezés után:
+
+lsblk -f
+
+és:
+
+cat /etc/fstab
+13. Képernyőkép
+
+Készíts screenshotot erről a két parancsról.
+
+Mentés neve:
+
+part-ftp.png
+Mit kell látszania?
+lsblk -f
+
+Valami ilyesmi:
+
+sdb1 ext4 FTP
+
+és mountpoint:
+
+/home/ftp
+fstab
+UUID=... /home/ftp ext4 defaults 0 2
+Gyakori hibák
+Rossz eszköz
+
+Ne /dev/sda-t formázd.
+
+Az a rendszerlemez.
+
+Elfelejtett mountpoint
+
+/home/ftp létezzen.
+
+Rossz UUID
+
+Mindig blkid alapján másold.
