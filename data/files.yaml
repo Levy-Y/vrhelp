@@ -1,4 +1,10 @@
 - ext: pdf
+  name: 0.1_AD_alapTelepites_2024.pdf
+  path: files/0.1_AD_alapTelepites_2024.pdf
+- ext: pdf
+  name: 0.2_AD_bovitett_FelhasznaloiKornyezet_hogyan_2024.pdf
+  path: files/0.2_AD_bovitett_FelhasznaloiKornyezet_hogyan_2024.pdf
+- ext: pdf
   name: 00_Debian11.05server-Letoltes&Telepites_2022-23_v1.1.pdf
   path: files/00_Debian11.05server-Letoltes&Telepites_2022-23_v1.1.pdf
 - ext: pdf
@@ -53,6 +59,9 @@
   name: 09_Debian12szerver-UFW_2024-25_v1.0.pdf
   path: files/09_Debian12szerver-UFW_2024-25_v1.0.pdf
 - ext: pdf
+  name: 1-IIS-webhely_2021.pdf
+  path: files/1-IIS-webhely_2021.pdf
+- ext: pdf
   name: 10_Debian11.05server-HTTP(Apache)_2022-23_v1.1.pdf
   path: files/10_Debian11.05server-HTTP(Apache)_2022-23_v1.1.pdf
 - ext: pdf
@@ -67,9 +76,75 @@
 - ext: pdf
   name: 13_Debian12szerver-LAMP_2024-25_v1.0.pdf
   path: files/13_Debian12szerver-LAMP_2024-25_v1.0.pdf
+- ext: pdf
+  name: 1_HTTPS_SSL_Cert.request.webSrv.in.AD_win12_2023_rovid.pdf
+  path: files/1_HTTPS_SSL_Cert.request.webSrv.in.AD_win12_2023_rovid.pdf
+- ext: txt
+  name: 1a_PowerShell-es_auto_cert_igenyles.txt
+  path: files/1a_PowerShell-es_auto_cert_igenyles.txt
+- ext: pdf
+  name: 2-IIS-backup_2022.pdf
+  path: files/2-IIS-backup_2022.pdf
+- ext: pdf
+  name: 2_HTTPS_SSL_Cert.request.webSrv.in.AD_win12_2023_reszletes.pdf
+  path: files/2_HTTPS_SSL_Cert.request.webSrv.in.AD_win12_2023_reszletes.pdf
+- ext: txt
+  name: 2b_web_gyakorlat.inf_igenyles.menete.txt
+  path: files/2b_web_gyakorlat.inf_igenyles.menete.txt
+- ext: pdf
+  name: 3-IIS-IPkorlatozas_2022.pdf
+  path: files/3-IIS-IPkorlatozas_2022.pdf
+- ext: pdf
+  name: 3_AD_gyak_3_2025.pdf
+  path: files/3_AD_gyak_3_2025.pdf
+- ext: bat
+  name: 3_AD_gyak_3_2025_users_OfficeOU.is.bat
+  path: files/3_AD_gyak_3_2025_users_OfficeOU.is.bat
+- ext: pdf
+  name: 3_autoTanusitvanyKliensnek-GP_2023.pdf
+  path: files/3_autoTanusitvanyKliensnek-GP_2023.pdf
+- ext: pdf
+  name: 4-IIS-config_2020.pdf
+  path: files/4-IIS-config_2020.pdf
+- ext: docx
+  name: 4_AD_gyak_4_2024.docx
+  path: files/4_AD_gyak_4_2024.docx
+- ext: pdf
+  name: 5-IIS-SSL_2021.pdf
+  path: files/5-IIS-SSL_2021.pdf
+- ext: pdf
+  name: 6-IIS-egyszeru_hitelesites_2022.pdf
+  path: files/6-IIS-egyszeru_hitelesites_2022.pdf
+- ext: pdf
+  name: AD-RODC_elmelet.pdf
+  path: files/AD-RODC_elmelet.pdf
+- ext: pdf
+  name: AD_GP_Orokles.Ervenyessegi.Sorrend_2023.pdf
+  path: files/AD_GP_Orokles.Ervenyessegi.Sorrend_2023.pdf
+- ext: pdf
+  name: AD_GP_UserMappaAtiranyitasa.2024.pdf
+  path: files/AD_GP_UserMappaAtiranyitasa.2024.pdf
+- ext: docx
+  name: "AD_bovitett_Felhaszn\xE1l\xF3iK\xF6rnyezet_hogyan_2023.docx"
+  path: "files/AD_bovitett_Felhaszn\xE1l\xF3iK\xF6rnyezet_hogyan_2023.docx"
+- ext: docx
+  name: AD_dolgozat_v251103.mod.docx
+  path: files/AD_dolgozat_v251103.mod.docx
+- ext: docx
+  name: AD_gyak_5_Emberek_2025.10.docx
+  path: files/AD_gyak_5_Emberek_2025.10.docx
+- ext: pdf
+  name: Az SSL.pdf
+  path: files/Az SSL.pdf
+- ext: pdf
+  name: CA_jo_Cert_hogyan_belso_IIS-nek_v5.pdf
+  path: files/CA_jo_Cert_hogyan_belso_IIS-nek_v5.pdf
 - ext: docx
   name: Change_enp0s_to_eth0_on_debian.docx
   path: files/Change_enp0s_to_eth0_on_debian.docx
+- ext: pdf
+  name: CsoporthazirendBeallitasok_v2021.02.25.pdf
+  path: files/CsoporthazirendBeallitasok_v2021.02.25.pdf
 - ext: pdf
   name: "Csoporth\xE1zirend szolg\xE1ltat\xE1sok konfigur\xE1l\xE1sa.pdf"
   path: "files/Csoporth\xE1zirend szolg\xE1ltat\xE1sok konfigur\xE1l\xE1sa.pdf"
@@ -77,6 +152,71 @@
   name: "C\xEDmt\xE1r-(Active Directory)-telep\xEDt\xE9s,-alapkonfigur\xE1l\xE1s.pdf"
   path: "files/C\xEDmt\xE1r-(Active Directory)-telep\xEDt\xE9s,-alapkonfigur\xE1l\xE1\
     s.pdf"
+- ext: txt
+  name: DHCP_Failover_config_msg.txt
+  path: files/DHCP_Failover_config_msg.txt
+- ext: pdf
+  name: DHCP_hatokorfelosztas_hogyan.pdf
+  path: files/DHCP_hatokorfelosztas_hogyan.pdf
+- ext: pdf
+  name: DNS_2B_2025_13bc_192.168.10.x.pdf
+  path: files/DNS_2B_2025_13bc_192.168.10.x.pdf
+- ext: pdf
+  name: DNS_2B_2025_13bc_192.168.10.x_kozosen.pdf
+  path: files/DNS_2B_2025_13bc_192.168.10.x_kozosen.pdf
+- ext: docx
+  name: DNS_3A_2srv_2025_replikal_hatokorFelosztas_v2.docx
+  path: files/DNS_3A_2srv_2025_replikal_hatokorFelosztas_v2.docx
+- ext: pdf
+  name: DNS_3A_2srv_2025_replikal_hatokorFelosztas_v2.pdf
+  path: files/DNS_3A_2srv_2025_replikal_hatokorFelosztas_v2.pdf
+- ext: txt
+  name: Firefox_kiegeszites.txt
+  path: files/Firefox_kiegeszites.txt
+- ext: pdf
+  name: HTML.pdf
+  path: files/HTML.pdf
+- ext: pdf
+  name: How.to.reset.the.Def.Domain.Policy.and.Def.DC.Policy.pdf
+  path: files/How.to.reset.the.Def.Domain.Policy.and.Def.DC.Policy.pdf
+- ext: docx
+  name: Howto Rename DomainName in WinSrv_v251128.docx
+  path: files/Howto Rename DomainName in WinSrv_v251128.docx
+- ext: docx
+  name: Howto.Properly.Rename.an.AD-DC.docx
+  path: files/Howto.Properly.Rename.an.AD-DC.docx
+- ext: pdf
+  name: IOS.pdf
+  path: files/IOS.pdf
+- ext: txt
+  name: IPv6_cheat.sheet.txt
+  path: files/IPv6_cheat.sheet.txt
+- ext: pdf
+  name: Infkommszolg_jegyzet_2011_eloadas_15_ipv6.pdf
+  path: files/Infkommszolg_jegyzet_2011_eloadas_15_ipv6.pdf
+- ext: docx
+  name: "KIADNI Lambda fu\u0308ggve\u0301ny_haszna\u0301lata_S3 ta\u0301rolo\u0301\
+    ra_a\u0301prilis.docx"
+  path: "files/KIADNI Lambda fu\u0308ggve\u0301ny_haszna\u0301lata_S3 ta\u0301rolo\u0301\
+    ra_a\u0301prilis.docx"
+- ext: docx
+  name: "KIADNI MariaDB rela\u0301cio\u0301s adatba\u0301zis le\u0301trehoza\u0301\
+    sa_a\u0301prilis.docx"
+  path: "files/KIADNI MariaDB rela\u0301cio\u0301s adatba\u0301zis le\u0301trehoza\u0301\
+    sa_a\u0301prilis.docx"
+- ext: docx
+  name: "KIADNI_Debian EC2 pe\u0301lda\u0301ny le\u0301trehoza\u0301sa AWS-ben_a\u0301\
+    prilis.docx"
+  path: "files/KIADNI_Debian EC2 pe\u0301lda\u0301ny le\u0301trehoza\u0301sa AWS-ben_a\u0301\
+    prilis.docx"
+- ext: docx
+  name: "KIADNI_Webhely_S3_taroloban_a\u0301prilis_AWS.docx"
+  path: "files/KIADNI_Webhely_S3_taroloban_a\u0301prilis_AWS.docx"
+- ext: docx
+  name: "KIADNI_Windows Server EC2 pe\u0301lda\u0301ny le\u0301trehoza\u0301sa AWS-ben_a\u0301\
+    prilis.docx"
+  path: "files/KIADNI_Windows Server EC2 pe\u0301lda\u0301ny le\u0301trehoza\u0301\
+    sa AWS-ben_a\u0301prilis.docx"
 - ext: docx
   name: Linux APT csomagkezeles.docx
   path: files/Linux APT csomagkezeles.docx
@@ -138,10 +278,37 @@
   name: "Linux_szerver_seg\xE9dlet_24-25_v1.3.pdf"
   path: "files/Linux_szerver_seg\xE9dlet_24-25_v1.3.pdf"
 - ext: pdf
+  name: Mohacsi_Janos_ipv6gyakorlat-slides_20231009print.pdf
+  path: files/Mohacsi_Janos_ipv6gyakorlat-slides_20231009print.pdf
+- ext: pdf
+  name: NetDE4.pdf
+  path: files/NetDE4.pdf
+- ext: docx
+  name: Printer Pooling hogyan WinSrv2022.docx
+  path: files/Printer Pooling hogyan WinSrv2022.docx
+- ext: docx
+  name: PrinterPooling.hogyan.WinSrv2022.v2.docx
+  path: files/PrinterPooling.hogyan.WinSrv2022.v2.docx
+- ext: pdf
+  name: RODC_hogyan_2025.pdf
+  path: files/RODC_hogyan_2025.pdf
+- ext: pdf
+  name: RODC_hogyan_2025.v2.pdf
+  path: files/RODC_hogyan_2025.v2.pdf
+- ext: pdf
   name: "Update, RDP, Automatikus szoftvertelep\xEDt\xE9s, H\xE1l\xF3zati k\xE1rtya\
     \ \xF6sszevon\xE1s-v1.0.pdf"
   path: "files/Update, RDP, Automatikus szoftvertelep\xEDt\xE9s, H\xE1l\xF3zati k\xE1\
     rtya \xF6sszevon\xE1s-v1.0.pdf"
+- ext: pdf
+  name: VPN_hogyan_egyben.pdf
+  path: files/VPN_hogyan_egyben.pdf
+- ext: bat
+  name: VPN_users_tesztelok.ellenorok_dolgozat.local.bat
+  path: files/VPN_users_tesztelok.ellenorok_dolgozat.local.bat
+- ext: bat
+  name: VPN_users_tesztelok.ellenorok_gyakorlat.local.bat
+  path: files/VPN_users_tesztelok.ellenorok_gyakorlat.local.bat
 - ext: pdf
   name: "Windows Szerver - DHCP Telep\xEDt\xE9se, Konfigur\xE1l\xE1sa biztons\xE1\
     gi.pdf"
@@ -186,18 +353,63 @@
 - ext: pdf
   name: WindowsSzerver2022-Web(IIS).pdf
   path: files/WindowsSzerver2022-Web(IIS).pdf
+- ext: pdf
+  name: _CA.telepitese_Kiszolgaloi.Tanusitvany_letrehozasa_2021.pdf
+  path: files/_CA.telepitese_Kiszolgaloi.Tanusitvany_letrehozasa_2021.pdf
+- ext: pdf
+  name: _CA_Ugyfel.Tanusitvanyok_letrehozasa_2023.pdf
+  path: files/_CA_Ugyfel.Tanusitvanyok_letrehozasa_2023.pdf
+- ext: txt
+  name: a_feladatokban_hasznalt_nyomtatok.txt
+  path: files/a_feladatokban_hasznalt_nyomtatok.txt
+- ext: bat
+  name: ad-dns.repair.bat
+  path: files/ad-dns.repair.bat
+- ext: docx
+  name: cer_to_pem.docx
+  path: files/cer_to_pem.docx
+- ext: txt
+  name: csv_hogyan_roviden.txt
+  path: files/csv_hogyan_roviden.txt
+- ext: txt
+  name: dhcp.v6_2.txt
+  path: files/dhcp.v6_2.txt
+- ext: txt
+  name: edge_ie.mod_on_by_regedit.txt
+  path: files/edge_ie.mod_on_by_regedit.txt
+- ext: txt
+  name: gpExtra_ora_letiltasa.txt
+  path: files/gpExtra_ora_letiltasa.txt
 - ext: ps1
   name: home_mappak.ps1
   path: files/home_mappak.ps1
+- ext: txt
+  name: ip.v6_youtubeVideok.txt
+  path: files/ip.v6_youtubeVideok.txt
+- ext: docx
+  name: ipv6_by_cisco.docx
+  path: files/ipv6_by_cisco.docx
+- ext: pdf
+  name: kepesSegedlet_GPO_ikon.CtrlAltDel_2023.pdf
+  path: files/kepesSegedlet_GPO_ikon.CtrlAltDel_2023.pdf
+- ext: txt
+  name: "linux  meghajt\xF3 felcsatol\xE1s \xE9s form\xE1z\xE1s.txt"
+  path: "files/linux  meghajt\xF3 felcsatol\xE1s \xE9s form\xE1z\xE1s.txt"
+- ext: pdf
+  name: linux.pdf
+  path: files/linux.pdf
 - ext: pdf
   name: netTeaming_linux_alatt.pdf
   path: files/netTeaming_linux_alatt.pdf
 - ext: ps1
   name: profilok_mappa.ps1
   path: files/profilok_mappa.ps1
-- ext: csv
-  name: users.csv
-  path: files/users.csv
-- ext: docx
-  name: "~$nux lemezkezel\xE9s 1.docx"
-  path: "files/~$nux lemezkezel\xE9s 1.docx"
+- ext: txt
+  name: ssh_csatlakozas_help.txt
+  path: files/ssh_csatlakozas_help.txt
+- ext: txt
+  name: szinkodok.txt
+  path: files/szinkodok.txt
+- ext: bat
+  name: usersGroupsOUs_ProgramozokTesztelok_gyakorlat.local.bat
+  path: files/usersGroupsOUs_ProgramozokTesztelok_gyakorlat.local.bat
